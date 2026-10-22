@@ -6,6 +6,9 @@ Written for **Muse** (Meta's personal AI assistant). This file contains:
 2. **A blank template** — for any other *Blue Archive* student, fill in
    the `[PLACEHOLDERS]` with facts from her wiki page (see the main
    [README](README.md), Step 1).
+3. **A universal avatar prompt** — send it to Muse **together with a
+   student's `.glb` model file** to build her avatar (see the main
+   [README](README.md), Step 6).
 
 Either way: copy the finished prompt, send it to Muse in chat, and ask
 Muse to add it to its `SOUL.md`. Nothing else is required.
@@ -61,10 +64,10 @@ answering.
 **Name:** Ask Muse in chat to rename itself to `Kayoko` (it updates its
 `IDENTITY.md`).
 
-**Avatar:** A face close-up rendered from Kayoko's 3D model works best.
+**Avatar:** Attach Kayoko's `.glb` model file to the chat and send the
+**universal avatar prompt** in section 3 below in the same message.
 The models are here: https://github.com/lihaohong6/BlueArchiveModels
-(see the main [README](README.md), Step 6, for how to do it — you send the
-portrait to Muse and ask it to build the avatar from it).
+(see the main [README](README.md), Step 6, for the full walkthrough).
 
 
 ---
@@ -111,3 +114,51 @@ answering.
 
 **Worked example:** the Kayoko prompt in section 1 above is this exact
 template, filled in. Compare the two if you get stuck.
+
+---
+
+## 3. Universal avatar prompt — for the .glb file
+
+Attach the student's `.glb` file to your chat with Muse and send this
+prompt **in the same message as the file**. It works for any student —
+the target is always *the character in the attached file*.
+
+```text
+Task: Update my avatar to match the character in the attached .glb
+file, and focus the framing on the character's face.
+
+Requirements:
+- Read and analyze the attached .glb file first: its meshes, textures
+  and materials, rig or skeleton, blendshapes / morph targets, and any
+  built-in animations it contains.
+- Match my avatar's appearance to the character in the file as closely
+  as possible — especially the face shape, eyes, nose, mouth, hair,
+  skin color, and head proportions.
+- Check the file's built-in animations. If this avatar system cannot
+  import .glb animation clips directly, say so clearly, report which
+  animations the file contains, and use the model as the visual
+  reference for the avatar instead. If basic motion must be recreated
+  (idle, blinking, talking, glancing), state that it was created new,
+  not taken from the file.
+- Focus on the face: close-up or medium close-up framing, the face in
+  the center of the frame, even lighting with no shadows covering the
+  facial features, and sharp focus on the eyes.
+- Keep it consistent: expressions and lip shapes must stay natural and
+  fit the face structure of the model.
+
+Guardrails:
+- Do not invent details that are not in the file. If a part cannot be
+  read or is not available, say so clearly.
+- If a 100% match is impossible because of technical or format limits,
+  explain honestly what could and could not be matched, then deliver
+  the closest possible result.
+- If you cannot open or process the .glb file directly, say so and
+  offer the most realistic alternative, for example steps or code to
+  do it in Blender or three.js.
+
+Deliverable:
+- The updated avatar — or, if that is not possible, instructions or
+  code that can be run directly.
+- A short summary of what was matched, what the framing focuses on,
+  and which parts are not fully identical yet.
+```

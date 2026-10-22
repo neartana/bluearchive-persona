@@ -81,12 +81,14 @@ Write down the facts that define her:
 
 ### Step 2 — Build the prompt
 
-Open **[PROMPT.md](PROMPT.md)**. It contains two things:
+Open **[PROMPT.md](PROMPT.md)**. It contains three things:
 
 - The **ready-made Kayoko prompt** — use it as-is for Kayoko.
 - A **blank template** with `[PLACEHOLDERS]` — for any other student,
   copy the template and fill every placeholder with the facts from
   Step 1.
+- A **universal avatar prompt** — sent together with a student's `.glb`
+  model file to build her avatar (used in Step 6).
 
 Rule of thumb: the more specific the traits (speech habits, hobbies,
 what she would *never* do), the more the persona sounds like her.
@@ -123,25 +125,40 @@ If something is off, tell Muse in plain words ("too cheerful — she is
 quieter than that") and ask it to adjust the persona in `SOUL.md`.
 Iterate once or twice; personas get noticeably better this way.
 
-### Step 6 (optional) — Avatar from the 3D model
+### Step 6 (optional) — Avatar from the 3D model (.glb)
 
 Student 3D models (in `.glb` format) are collected in this repository:
 
 **https://github.com/lihaohong6/BlueArchiveModels**
 
+Do **not** start by screenshotting the model yourself. The primary
+method is: **attach the `.glb` file to your chat with Muse, together
+with the universal avatar prompt.**
+
 1. Open the link and find your student's file — names follow the pattern
    `<Student>.glb` or `<Student> (Variant).glb`
    (for example `Kayoko (New Year).glb`).
 2. Download the file.
-3. Open it in a GLB viewer (any browser-based viewer works) or in
-   Blender. Hide weapon / prop objects if they get in the way, zoom in
-   on the face, and frame a clean medium close-up portrait.
-4. Export or screenshot the portrait as a PNG.
-5. Send that image to Muse in chat and ask it to create avatar options
-   from the reference and set the one you pick.
+3. In your chat with Muse, **attach the `.glb` file itself** (the same
+   way you would attach a photo or a document).
+4. Copy the **universal avatar prompt** from
+   [PROMPT.md](PROMPT.md) (section 3) and send it **in the same message**
+   as the file.
+5. Muse reads and analyzes the file (meshes, materials, rig, morph
+   targets, animations), renders or reconstructs a face close-up from
+   the model, and offers avatar options. Pick the one you like and ask
+   Muse to set it.
 
-Note: the model's in-game animation clips cannot be transferred into
-Muse — the avatar will be a still portrait.
+One honest limitation, which the prompt itself tells Muse to state:
+the animation clips inside a `.glb` file **cannot be imported into
+Muse's avatar system** — Muse uses the model as the exact visual
+reference for a still avatar, and must report what the file contains
+instead of pretending the animations were transferred.
+
+**Fallback:** if Muse cannot process the attached file in your setup,
+open the `.glb` in a browser-based GLB viewer or Blender, hide weapon /
+prop objects, frame a medium close-up of the face, export a PNG, and
+send Muse that image as the avatar reference instead.
 
 
 ## About the example — Onikata Kayoko
