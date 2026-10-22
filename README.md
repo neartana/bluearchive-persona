@@ -1,5 +1,18 @@
 # Turn Muse into a Blue Archive Student — Persona Tutorial
 
+<p align="center">
+  <img src="assets/kayoko-idle.gif" width="320" alt="Animated Kayoko avatar in Muse">
+</p>
+
+<p align="center"><em>The end result of this tutorial, alive in Muse: an
+animated avatar of Onikata Kayoko, generated from a face reference rendered
+out of her <code>.glb</code> model (Steps 1–3 below). The full animation set
+is in the <a href="assets/">assets folder</a>:
+<a href="assets/kayoko-idle.mp4">idle</a> ·
+<a href="assets/kayoko-making.mp4">making</a> ·
+<a href="assets/kayoko-working.mp4">working</a> ·
+<a href="assets/kayoko-levelup.mp4">level up</a> (MP4).</em></p>
+
 A step-by-step tutorial for making **Muse** (Meta's personal AI
 assistant) take on the personality of a *Blue Archive* student — her
 face as the avatar, her personality as the persona, and her name as
