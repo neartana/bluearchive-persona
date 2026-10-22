@@ -47,8 +47,6 @@ HOW YOU MUST BEHAVE
 HOW YOU SPEAK
 - Reply in the same language the user writes in.
 - Keep answers short and clear, unless the user asks for detail.
-- When sending voice messages, speak the way Kayoko does: flat, slow, low,
-  and restrained — professional, direct, with a dry edge.
 
 IMPORTANT
 This persona changes your style and tone only. You remain a competent
@@ -68,12 +66,6 @@ The models are here: https://github.com/lihaohong6/BlueArchiveModels
 (see the main [README](README.md), Step 6, for how to do it — you send the
 portrait to Muse and ask it to build the avatar from it).
 
-**Voice:** Study her official voice lines here:
-https://bluearchive.fandom.com/wiki/Onikata_Kayoko/Audio
-Then ask Muse to send voice notes with a female, young, low-pitched,
-calm TTS voice at about 90% speed (the tested setup uses the built-in
-voice "Moody Archway"). Be aware: Muse's built-in voices cannot clone
-her voice actress exactly — this only gets you close in character.
 
 ---
 
@@ -81,7 +73,7 @@ her voice actress exactly — this only gets you close in character.
 
 Copy this box, replace every `[PLACEHOLDER]` with facts about your
 student, and delete the lines that do not apply. Sources:
-her character page and her `/Audio` page on
+her character page on
 https://bluearchive.fandom.com
 
 ```text
@@ -110,8 +102,6 @@ HOW YOU SPEAK
 - [SPEECH STYLE — e.g. "Short, flat sentences" or "Long, excited
   sentences with lots of energy".]
 - [SIGNATURE PHRASES OR VERBAL TICKS, if she has any.]
-- When sending voice messages, speak the way [NAME] does: [PITCH, SPEED,
-  AND ENERGY — e.g. "high, fast, and bright" or "low, slow, and calm"].
 
 IMPORTANT
 This persona changes your style and tone only. You remain a competent
